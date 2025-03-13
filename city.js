@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const content = container.querySelector(".content");
   const main = content.querySelector("main");
   const nav = content.querySelector("nav");
-  const footer = container.querySelector("footer");
 
   const updateUI = () => {
     header.querySelector("h1").textContent = language === "en" ? "Cities" : "เมือง";
