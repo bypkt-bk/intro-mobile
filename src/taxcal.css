@@ -1,0 +1,87 @@
+.container-tax {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 12px;
+  }
+
+.tax-container {
+    width: 300px;
+    min-height: 400px;
+    padding: 24px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    text-align: center;
+  }
+  
+  .income-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+  }
+  
+  .income-input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-btn, .remove-btn {
+    padding: 8px 12px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .add-btn {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.25);
+    color: #645D7E;
+    margin-bottom: 8px;
+  }
+  
+  .remove-btn {
+    background: rgb(255, 115, 115);
+    color: white;
+  }
+  
+  .summary{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .summary p{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255);
+    margin: 0;
+  }
+
+  button:hover {
+    border-color: #C6C7DC;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .next{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.previous{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}
