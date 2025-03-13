@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>City Information</title>
   <link rel="stylesheet" href="city.css">
 </head>
+
 <body>
   <div class="container">
     <header>
-      <h1></h1>
-      <button></button>
+      <h1>Cites</h1>
+      <button id="language" onclick="toggleLanguage()">th</button>
     </header>
     <div class="content">
-      <nav></nav>
+      <nav><button onclick="setCity('London')">London</button>
+        <button onclick="setCity('Paris')">Paris</button>
+        <button onclick="setCity('Japan')">Japan</button>
+      </nav>
       <main>
-        <h2></h2>
-        <p></p>
+        <h2 id="title"></h2>
+        <p id="description"></p>
       </main>
     </div>
     <footer>
@@ -25,4 +30,5 @@
   </div>
   <script src="city.js"></script>
 </body>
+
 </html>

@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tax Calculation</title>
   <link rel="stylesheet" href="taxcal.css">
 </head>
+
 <body>
   <div class="container-tax">
-    <div class="tax-container"></div>
-    <div class="summary"></div>
+    <div class="tax-container">
+      <h2>คำนวณภาษีเงินได้บุคคลธรรมดา</h2>
+      <div id="income-group" class="income-group">
+        <input type="number" class="income-input" oninput="calculateTotalIncome()">
+      </div>
+      <button onclick="addIncomeField()" class="add-btn">Add Income Field</button>
+      <button onclick="removeIncomeField()" class="remove-btn">Remove Income Field</button>
+      <div class="summary">
+        <p>รายได้รวม: <span id="totalIncome">0</span>บาท</p>
+        <p>ภาษีที่ต้องจ่าย: <span id="taxRate">0</span>%</p>
+        <p>อัตราภาษีที่ใช้: <span id="totalTax">0</span>บาท</p>
+      </div>
+    </div>
   </div>
   <script src="taxcal.js"></script>
 </body>
+
 </html>
